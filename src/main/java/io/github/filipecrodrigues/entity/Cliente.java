@@ -12,7 +12,6 @@ import java.time.LocalDate;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @Entity
 @Table(name = "clientes")
 public class Cliente {
@@ -30,8 +29,7 @@ public class Cliente {
 
     @Column(unique = true)
     private String cpf;
-
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @Column(name = "datacadastro")
     private LocalDate dataCadastro;
 
 }
