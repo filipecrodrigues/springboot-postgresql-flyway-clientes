@@ -27,6 +27,7 @@ public class ClienteController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Cliente criar(@RequestBody Cliente cliente) {
+        cliente.setId(null); //para forçar o insert
         return service.salvar(cliente);
     }
 
