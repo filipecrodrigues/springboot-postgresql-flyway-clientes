@@ -1,0 +1,90 @@
+############################
+# MAVEN
+############################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+############################
+# GRADLE (caso exista)
+############################
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+gradle-app.setting
+
+############################
+# JAVA
+############################
+*.class
+*.jar
+*.war
+*.ear
+*.javac
+
+############################
+# LOGS
+############################
+*.log
+
+############################
+# IDEs
+############################
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.bin/
+
+# VS Code
+.vscode/
+
+############################
+# SISTEMA OPERACIONAL
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# ARQUIVOS TEMPORÁRIOS
+############################
+*.tmp
+*.temp
+*.cache
+*.swp
+*.swo
+*~
+
+############################
+# FLYWAY (opcional)
+############################
+# Se quiser ignorar arquivos gerados automaticamente
+#db/migration/*.sql
+
+############################
+# ENV / CREDENCIAIS
+############################
+.env
+*.env
+application-dev.properties
+application-test.properties
+
+############################
+# DOCKER (caso use)
+############################
+docker/logs/
+docker/data/
