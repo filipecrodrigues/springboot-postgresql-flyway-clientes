@@ -1,7 +1,7 @@
-package io.github.filipecrodrigues.repository.Cliente;
+package io.github.filipecrodrigues.repository;
 
 import io.github.filipecrodrigues.entity.Cliente;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface Repository extends JpaRepository<Cliente, Long> {
+public interface ClienteRepository extends JpaRepository<Cliente, Long> {
 }
