@@ -25,6 +25,9 @@ public class ClienteService {
         return repository.save(cliente);
     }
 
+    public List<Cliente> salvarVarios(List<Cliente> clientes){
+        return repository.saveAll(clientes);
+    }
 
     public List<Cliente> listarTodos() {
         return repository.findAll();

@@ -31,6 +31,11 @@ public class ClienteController {
         return service.salvar(cliente);
     }
 
+    @PostMapping("/lote")
+    public List<Cliente> criarEmLote(@RequestBody List<Cliente> clientes){
+        return service.salvarVarios(clientes);
+    }
+
 
     @GetMapping
     public List<Cliente> listar() {
